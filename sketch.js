@@ -28,10 +28,6 @@ function draw() {
     noErase();
     pop();
   }
-  if(animating == true){
-    clear();
-    image(layout[0], width/2, height/2);
-  }
 }
 
 function keyTyped() {
@@ -40,15 +36,15 @@ function keyTyped() {
 }
     return false;
   }
-// function doubleClicked() {
-//   if (animating == true){
-//   setTimeout(randomizer,500);
-//   }
-// }
-// function randomizer(){
-//   animating = false
-//  if(animating == true){
-//    clear();
-//    image(layout[0], width/2, height/2);
-//  }
-//  }
+function doubleClicked() {
+  if (animating == true){
+  setTimeout(randomizer,500);
+  }
+}
+function randomizer(){
+  animating = false
+ if(animating == true){
+   clear();
+   image(layout[0], width/2, height/2);
+ }
+}
