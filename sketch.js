@@ -2,10 +2,10 @@ let randomIndex;
 let array = [];
 let animating = false
 let layout = [];
-var img;
-function preload (){
-  for(let i = 0; i <= 3; i++){
-    layout[i] = loadImage(`Layouts/layout_${i}.JPG`);
+// var img;
+// function preload (){
+//   for(let i = 0; i <= 3; i++){
+//     layout[i] = loadImage(`Layouts/layout_${i}.JPG`);
   }
 }
 function setup() {
@@ -38,6 +38,6 @@ function keyTyped() {
   }
 function doubleClicked() {
   if (animating == true){
-  image(layout[0],width/2, height/2);
+  // image(layout[0],width/2, height/2);
   }
 }
