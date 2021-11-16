@@ -1,7 +1,7 @@
 let randomIndex;
-let array = [];
 let animating = false
 let layout = [];
+let images;
 function preload (){
   for(let i = 0; i <= 3; i++){
     layout[i] = loadImage(`Layouts/layout_${i}.JPG`);
@@ -37,6 +37,13 @@ function keyTyped() {
   }
 function doubleClicked() {
   if (animating == true){
-  image(layout[0],width/2, height/2);
+  setTimeout(randomizer,500);
   }
 }
+function randomizer(){
+  // animating = false
+ if(animating == true){
+   clear();
+   image(layout[i], width/2, height/2);
+ }
+ }
