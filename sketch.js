@@ -9,7 +9,7 @@ function preload (){
 }
 function setup() {
   createCanvas(1260,500);
-  strokeWeight(5);
+  strokeWeight(8);
   console.log(layout);
   imageMode(CENTER);
   background(209, 162, 98);
