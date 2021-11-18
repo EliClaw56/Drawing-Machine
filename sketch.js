@@ -4,11 +4,16 @@ let layout = [];
 let images;
 function preload (){
   for(let i = 0; i <= 3; i++){
-    layout[i] = loadImage(`Layouts/layout_0.PNG`);
+    layout[i] = loadImage('Layouts/layout_'+i+'.png');
+
+  }
+  for(let i = 0; i <= 3; i++){
+    layout[i] = loadImage('Layouts/layout_'+i+'.jpg');
   }
 }
+
 function setup() {
-  createCanvas(1260,500);
+  createCanvas(windowWidth,windowHeight);
   strokeWeight(8);
   console.log(layout);
   imageMode(CENTER);
@@ -36,15 +41,15 @@ function keyTyped() {
 }
     return false;
   }
-function doubleClicked() {
-  if (animating == true){
-  setTimeout(randomizer,500);
-  }
-}
-function randomizer(){
-  animating = false
- if(animating == true){
-   clear();
-   image(layout[0], width/2, height/2);
- }
-}
+// function doubleClicked() {
+//   if (animating == true){
+//   setTimeout(randomizer,500);
+//   }
+// }
+// function randomizer(){
+//   animating = false
+//  if(animating == true){
+//    clear();
+//    image(layout[i]);
+ // }
+// }
