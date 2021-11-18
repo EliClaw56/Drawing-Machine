@@ -31,10 +31,8 @@ function setup() {
   // button = select('#genButton')
   // button.class("randomizerButton");
   // button.doubleClicked(timeIt);
-
-  push();
   song.loop();
-  pop();
+
 
 
 }
