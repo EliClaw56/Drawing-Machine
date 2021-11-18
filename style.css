@@ -8,15 +8,21 @@ body{
   src: url(chalkduster.ttf);
 }
 canvas {
+  position: absolute;
+  z-index: -1;
+  margin: auto;
+  right: 50px;
+  left: 50px;
+
   display: block;
   border: 10px solid brown;
   border-radius: 50px;
   background: rgb(97, 67, 27);
 
-  background-image: url("/Layouts/layout_0.png"); size: (1250,700);
-  background-position: center;
+  background-image: url("/Layouts/layout_0.png");
+  background-position: absolute;
   background-repeat: no-repeat;
-  background-size: 1250px 500px;
-  height: 100px
+  background-size: 1000px 500px;
+
 
 }

@@ -5,27 +5,46 @@
   <script src="p5.sound.min.js"></script>
   <link rel="stylesheet" type="text/css" href="style.css">
   <meta charset="utf-8">
-<!-- <style>
-body  {
-  background-image: url("/Layouts/layout_0.png");
-}
-</style> -->
+
 
 </head>
 <script src="sketch.js"></script>
 
 <body>
-  <h1 style="background-color:lightgreen;text-align:center">Get Diggin</h1>
-  <h3 style="background-color:brown;text-align:center">Press "s" to save</h3>
+  <h1 style="background-color:rgb(255, 208, 0);text-align:center">Get Diggin!</h1>
+  <h2 style="background-color:rgb(255, 153, 0);text-align:center">Drag your mouse to dig for treasure before the time runs out</h2>
+  <h3 style="background-color:brown;text-align:center">Press "s" to save • Refresh page to play again</h3>
 
-
+<style>
+button{
+position: absolute;
+top: 34%;
+left: 47%;
+background-color:rgb(0,0,0);
+border: none;
+color: white;
+padding: 12px 29px;
+text-align: center;
+text-decoration: none;
+display: inline-block;
+font-size: 12px;
+margin: 4px 2px;
+cursor: pointer;
+font-family: sans-serif;
+font-family: chalkduster;
+src: url(chalkduster.ttf);
+}
+body{
+background-image: url("/Layouts/dig_dug_grnd.jpg");
+}
+</style>
 </body>
 <div style="position:(500,500)left:0; top:0">
 <div class="canvasDiv" id="canvasDiv">
 
 </div>
 <div class="" id="controlsDiv">
-  <button type="button" id="genButton">Double-click to reset</button>
+  <!-- <button style=""type="button" id="genButton">START</button> -->
 
 
 </html>
