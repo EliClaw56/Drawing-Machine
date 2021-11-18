@@ -3,7 +3,7 @@ let animating = false
 let layout = [];
 let images;
 let button;
-let timerValue = 3;
+let timerValue = 10;
 let startButton;
 let x = 0;
 let song;
