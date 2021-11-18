@@ -2,18 +2,16 @@ let randomIndex;
 let animating = false
 let layout = [];
 let images;
+let button;
+
 function preload (){
   for(let i = 0; i <= 3; i++){
     layout[i] = loadImage('Layouts/layout_'+i+'.png');
-
-  }
-  for(let i = 0; i <= 3; i++){
-    layout[i] = loadImage('Layouts/layout_'+i+'.jpg');
   }
 }
 
 function setup() {
-  createCanvas(windowWidth,windowHeight);
+  createCanvas(displayWidth,displayHeight);
   strokeWeight(8);
   console.log(layout);
   imageMode(CENTER);
@@ -22,6 +20,8 @@ function setup() {
   button = select('#genButton')
   button.position(560,200);
   button.class("randomizerButton");
+  button.doubleClicked(refresh);
+
 }
 
 function draw() {
@@ -29,10 +29,15 @@ function draw() {
     push();
     noStroke();
     erase(255);
-    ellipse(mouseX,mouseY,20);
+    circle(mouseX,mouseY,50);
     noErase();
     pop();
+
   }
+}
+function refresh(){
+  clear();
+  background(209, 162, 98);
 }
 
 function keyTyped() {
@@ -41,15 +46,3 @@ function keyTyped() {
 }
     return false;
   }
-// function doubleClicked() {
-//   if (animating == true){
-//   setTimeout(randomizer,500);
-//   }
-// }
-// function randomizer(){
-//   animating = false
-//  if(animating == true){
-//    clear();
-//    image(layout[i]);
- // }
-// }

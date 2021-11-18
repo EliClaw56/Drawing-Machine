@@ -10,6 +10,13 @@ body{
 canvas {
   display: block;
   border: 10px solid brown;
+  border-radius: 50px;
   background: rgb(97, 67, 27);
-  border-radius: 50px
+
+  background-image: url("/Layouts/layout_0.png"); size: (1250,700);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 1250px 500px;
+  height: 100px
+
 }
