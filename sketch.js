@@ -11,7 +11,7 @@ let myFont;
 
 function preload() {
   for (let i = 0; i <= 0; i++) {
-    layout[i] = loadImage('Layouts/layout_' + i + '.png');
+    layout[i] = loadImage('./Layouts/layout_' + i + '.png');
   }
   soundFormats('mp3', 'ogg');
   song = loadSound('03-DigDug_Walking.mp3');
