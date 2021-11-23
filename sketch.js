@@ -14,7 +14,7 @@ function preload() {
     layout[i] = loadImage('Layouts/layout_' + i + '.png');
   }
   soundFormats('mp3', 'ogg');
-  song = loadSound("03-DigDug_Walking.mp3");
+  song = loadSound('03-DigDug_Walking.mp3');
 }
 // }
 //   myFont= loadFont('chalkduster/chalkduster.ttf');
@@ -31,7 +31,9 @@ function setup() {
   // button = select('#genButton')
   // button.class("randomizerButton");
   // button.doubleClicked(timeIt);
+  push();
   song.loop();
+  pop();
 
 
 
