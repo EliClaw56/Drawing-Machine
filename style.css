@@ -19,11 +19,10 @@ canvas {
   border-radius: 50px;
   background: rgb(97, 67, 27);
 
-  /* background-image: url("/Layouts/layout_0.png"); */
   background-position: absolute;
   background-repeat: no-repeat;
   background-size: 1000px 500px;
-  background-image: url("https://rmfleath.sirv.com/layout_0.png");
+
 
 
 }
