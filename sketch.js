@@ -16,8 +16,8 @@ function preload() {
   soundFormats('mp3', 'ogg');
   song = loadSound('03-DigDug_Walking.mp3');
 }
-// }
-//   myFont= loadFont('chalkduster/chalkduster.ttf');
+  // myFont= loadFont('chalkduster/chalkduster.ttf');
+
 
 
 function setup() {
