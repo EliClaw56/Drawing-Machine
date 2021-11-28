@@ -12,11 +12,15 @@ body{
   background-repeat: no-repeat;
   background-size: 1280px 760px;
 
+
 }
 canvas {
+
   position: absolute;
   z-index:-1;
   margin: auto;
+  width:1160px;
+  height:550px;
   right: 50px;
   left: 50px;
 
@@ -24,5 +28,9 @@ canvas {
   border: 10px solid brown;
   border-radius: 50px;
   background: rgb(97, 67, 27);
-
+}
+  canvas {
+  background-repeat: no-repeat;
+  background-size: 1150px 500px;
+  background-image: url('https://rmfleath.sirv.com/layout_0.png');
 }
