@@ -13,30 +13,24 @@ function preload() {
   for (let i = 0; i <= 0; i++) {
     layout[i] = loadImage("https://rmfleath.sirv.com/layout_0.png");
   }
-  soundFormats('mp3', 'ogg');
-  song = loadSound('03-DigDug_Walking.mp3');
-}
   myFont= loadFont('chalkduster/chalkduster.ttf');
 }
 
 
 
 function setup() {
-  createCanvas(1000, 500);
+  createCanvas(1160, 550);
   strokeWeight(8);
   console.log(layout);
   imageMode(CENTER);
   background(209, 162, 98);
   textSize(20);
   setInterval(timeIt, 1000);
-  // button = select('#genButton')
-  // button.class("randomizerButton");
-  // button.doubleClicked(timeIt);
-  push();
+  soundFormats('mp3', 'ogg');
+  song = loadSound('03-DigDug_Walking.mp3', loaded);
+}
+function loaded(){
   song.loop();
-  pop();
-
-
 
 }
 
@@ -48,9 +42,6 @@ function draw() {
     circle(mouseX, mouseY, 50);
     noErase();
     pop();
-
-    fill(0,0,0);
-    rect(100,100,100,100);
   }
 
   stroke(255);
